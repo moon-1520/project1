@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>상품 상세 페이지</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    header, footer {
+      background-color: #555;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .product-main img {
+      width: 100%;
+      max-width: 400px;
+    }
+    .section {
+      margin-top: 40px;
+    }
+    .section img {
+      width: 100%;
+      margin-top: 10px;
+    }
+    .grid-3 {
+      display: flex;
+      gap: 20px;
+      justify-content: space-between;
+    }
+    .grid-3 div {
+      flex: 1;
+      text-align: center;
+    }
+    .related-products img {
+      width: 100px;
+      margin: 10px;
+    }
+    .review, .info-table {
+      border-top: 1px solid #ccc;
+      padding-top: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    table, th, td {
+      border: 1px solid #ddd;
+    }
+    th, td {
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Soldesk 쇼핑몰</h1>
+  </header>
+
+  <div class="container">
+    <!-- 상품 메인 이미지 및 설명 -->
+    <section class="product-main">
+      <img src="product1.jpg" alt="초코파이">
+      <h2>오리온 초코파이 12개입</h2>
+      <p>가격: 4,100원</p>
+      <p>수량: <input type="number" value="1" min="1"></p>
+      <button>장바구니에 담기</button>
+    </section>
+
+    <!-- 설명 영역 -->
+    <section class="section">
+      <h3>상품 설명</h3>
+      <p>함께 나누는 정 오리온 초코파이.</p>
+      <img src="product1_detail.jpg" alt="상세 이미지">
+    </section>
+
+    <!-- Check Point -->
+    <section class="section">
+      <h3>Randy's Check Point</h3>
+      <div class="grid-3">
+        <div>
+          <img src="images/point1.jpg" alt="포인트1">
+          <p>신선한 재료</p>
+        </div>
+        <div>
+          <img src="images/point2.jpg" alt="포인트2">
+          <p>간편 조리</p>
+        </div>
+        <div>
+          <img src="images/point3.jpg" alt="포인트3">
+          <p>풍부한 양념</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 추가 이미지 -->
+    <section class="section">
+      <h3>자세히 보기</h3>
+<!--       <img src="images/detail2.jpg" alt="조리된 음식">
+      <img src="images/detail3.jpg" alt="접시에 담긴 음식"> -->
+    </section>
+
+    <!-- 상품 정보 -->
+    <section class="section info-table">
+      <h3>상품정보 제공 고시</h3>
+      <table>
+        <tr><th>제품명</th><td>오리온초코파이</td></tr>
+        <tr><th>식품유형</th><td>초콜릿 가공품</td></tr>
+        <tr><th>원재료명</th><td>백설탕,밀가루(밀 미국산),물엿,쇼트닝(팜유 말레이시아산,팜올레인유 말레이시아산),식물성유지1(말레이시아산)코코아분말,전지분유,함수포도당,젤라틴(돼지),산도조절제 3종,전란액, 식염, 코코아매스, 합성향료3종, 향료제제(향료,포도당),혼합제제(카제인나트륨,수산화칼슘,아라비아검), 유화제, 잔탄검, 유당, 식물성유지2</td></tr>
+        <tr><th>보관방법</th><td>실온보관</td></tr>
+        <tr><th>유통기한</th><td>제품에 별도 표기</td></tr>
+        <tr><th>알레르기 표기</th><td>밀, 달걀, 우유, 대두, 돼지고기, 쇠고기 함유</td></tr>
+        <tr><th>업소명 소재지</th><td>(주)오리온 제4청주공장 충청북도 청주시 흥덕구 월명로 249</td></tr>
+      </table>
+    </section>
+
+    <!-- 후기 -->
+    <section class="section review">
+      <h3>상품후기</h3>
+      <p><strong>홍길동</strong> - 1박스 개꿀!!</p>
+      <p><strong>김영희</strong> - 몽쉘이 더맛남....</p>
+    </section>
+
+    <!-- 관련 상품 -->
+    <section class="section related-products">
+      <h3>관련 상품</h3>
+      <img src="images/product2.jpg" alt="관련 상품1">
+      <img src="images/product3.jpg" alt="관련 상품2">
+      <img src="images/product4.jpg" alt="관련 상품3">
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; Soldesk 쇼핑몰. 고객센터: 1234-5678</p>
+  </footer>
+</body>
+</html>
