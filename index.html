@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>예제 쇼핑몰</title>
+    <style>
+        /* 기본 스타일 초기화 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
+
+        /* 헤더 스타일 */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* 네비게이션 바 */
+        nav {
+            background-color: #555;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* 메인 배너 이미지 */
+        .main-banner {
+            width: 100%;
+            height: auto;
+        }
+
+        /* 상품 영역 */
+        .product-section {
+            padding: 30px;
+            text-align: center;
+        }
+
+        .product-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .product {
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            width: 200px;
+            padding: 15px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .product h3 {
+            margin: 10px 0 5px;
+        }
+
+        .product p {
+            color: #888;
+            font-size: 14px;
+        }
+
+        /* 회원가입, 장바구니 버튼 영역 */
+        .actions {
+            text-align: center;
+            margin: 30px;
+        }
+
+        .actions a {
+            display: inline-block;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        /* 푸터 */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 헤더 영역 -->
+    <header>
+        <h1>Soldesk 쇼핑몰</h1>
+        <p>당신의 쇼핑을 즐겁게!</p>
+    </header>
+
+    <!-- 내비게이션 바 -->
+    <nav>
+        <!-- 실제 페이지 경로 링크 적용 -->
+        <a href="index.html">홈</a>
+        <a href="products.html">제품</a>
+        <a href="events.html">이벤트</a>
+        <a href="contact.html">문의하기</a>
+        <a href="signup.html">회원가입</a> <!-- 회원가입 페이지 링크 -->
+        <a href="cart.html">장바구니</a> <!-- 장바구니 페이지 링크 -->
+    </nav>
+
+    <!-- 메인 배너 이미지 -->
+    <img src="images/banner.jpg" alt="쇼핑몰 메인 배너 이미지" class="main-banner">
+    <!-- 예시 배너 이미지는 images/banner.jpg 파일을 사용 -->
+
+    <!-- 인기 상품 섹션 -->
+    <section class="product-section">
+        <h2>인기 상품</h2>
+        <div class="product-grid">
+            <!-- 제품 1 -->
+            <div class="product">
+       		    <a href="product1.html"><img src="product1.jpg" alt="상품1 이미지"></a>                  
+                <!-- 예시 상품 이미지 -->
+                <h3>오리온 초코파이</h3>
+                <p>₩4,100</p>               
+            </div>
+
+            <!-- 제품 2 -->
+            <div class="product">
+       		    <a href="product2.html"><img src="product2.jpg" alt="상품2 이미지"></a>  
+                <h3>카카오 몽쉘</h3>
+                <p>₩4,200</p>
+            </div>
+
+            <!-- 제품 3 -->
+            <div class="product">
+       		    <a href="product3.html"><img src="product3.jpg" alt="상품3 이미지"></a>  
+                <h3>해태 오예스</h3>
+                <p>₩4,000</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 회원가입 및 장바구니 버튼 -->
+    <div class="actions">
+        <a href="signup.html">회원가입 하기</a>
+        <a href="cart.html">장바구니 보기</a>
+    </div>
+
+    <!-- 푸터 -->
+    <footer>
+        <p>&copy; 2025 예제 쇼핑몰. 모든 권리 보유.</p>
+    </footer>
+
+</body>
+</html>
