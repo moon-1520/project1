@@ -1,0 +1,10 @@
+정성목	
+기초인프라구성, IAM 계정및 권한, DB 백업, Azure DR구성
+최철민
+세션매니저 구성, waf구성
+김덕호
+cognito (OAuth 2.0) 연동, AWS openserach 서비스
+권성욱
+프론트엔드 구성(웹), S3버킷 구성, CloudFront 정적 웹사이트 배포
+이태현
+EKS 구성, sms 서비스 ,백엔드 api 구성, CI/CD, Monitoring 구성

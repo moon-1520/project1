@@ -1,0 +1,5 @@
+CI/CD(GitHub, Argo CD ,GitHub Actions)
+모니터링(Grafana, Prometheus, CloudWatch)
+협업도구(Notion,GitHub,slack)
+aws(EKS, S3, RDS, DynamoDB, CloudFront, WAF, Route53, ACM, Lambda, API Gateway...)
+azure(azure Firewall,Front Door, Blob Storage, CosmosDB, Functions)
